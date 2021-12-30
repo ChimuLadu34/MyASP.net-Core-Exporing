@@ -34,7 +34,14 @@ namespace bookStore
                 {
                     await context.Response.WriteAsync("Hello World!");
                 });
+                
+                endpoints.MapGet("/Ladu", async context =>
+                {
+                    await context.Response.WriteAsync("Loves Chimu so much!");
+                });
+
             });
+
         }
     }
 }
